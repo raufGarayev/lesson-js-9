@@ -1,0 +1,53 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    height: 100vh
+
+.container
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.todo
+    width: 400px
+    &-input
+        background: orange
+        padding: 10px
+        display: flex
+        gap: 5px
+        input
+            width: 100%
+            flex: 1
+            border: none
+            outline: none
+            padding: 10px
+        button
+            background: #000
+            color: #fff
+            border: none
+            width: 60px
+            cursor: pointer
+    &-list
+        margin-top: 20px
+        &_item
+            background: orange
+            display: flex
+            justify-content: space-between
+            padding: 10px
+            border-bottom: 1px solid #000
+            &-icons
+                i:nth-child(1)
+                    color: green
+                    cursor: pointer
+                i:nth-child(2)
+                    margin-left: 7px
+                    color: red
+                    cursor: pointer
+
+
+.finished
+    text-decoration: line-through
